@@ -108,6 +108,11 @@ export default {
               initialValue: () => 'Design Process',
             },
             {
+              name: 'description',
+              type: 'text',
+              title: 'Section Description', // This is the new field
+            },
+            {
               name: 'content',
               type: 'array',
               title: 'Process Steps',
