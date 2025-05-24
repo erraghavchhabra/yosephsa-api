@@ -210,7 +210,13 @@ export default {
           ],
           preview: {
             select: {
-              title: 'src',
+              src: 'src',
+            },
+            prepare({src}) {
+              return {
+                title: 'Iframe',
+                subtitle: src,
+              }
             },
           },
         },
