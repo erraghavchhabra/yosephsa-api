@@ -72,7 +72,7 @@ export default {
           name: 'ProjectOverview',
           type: 'object',
           fields: [
-            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Project Overview'},
             {name: 'content', type: 'text', title: 'Content'},
           ],
         },
@@ -81,7 +81,7 @@ export default {
           type: 'object',
           title: 'Concept & Objective',
           fields: [
-            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Concept & Objective'},
             {name: 'content', type: 'text', title: 'Content'},
           ],
         },
@@ -89,7 +89,7 @@ export default {
           name: 'DesignProcess',
           type: 'object',
           fields: [
-            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Design Process'},
             {
               name: 'content',
               type: 'array',
@@ -114,7 +114,20 @@ export default {
               name: 'title',
               type: 'string',
               title: 'Title',
-              initialValue: () => 'ResearchInspiration',
+              initialValue: () => 'Research Inspiration'
+            },
+            {name: 'content', type: 'text', title: 'Content'},
+          ],
+        },
+        {
+          name: 'Impact&Reflection',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Impact & Reflection'
             },
             {name: 'content', type: 'text', title: 'Content'},
           ],
@@ -123,7 +136,7 @@ export default {
           name: 'ProjectHighlights',
           type: 'object',
           fields: [
-            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'title', type: 'string', title: 'Title' , initialValue: () => 'Project Highlights'},
             {
               name: 'content',
               type: 'array',
@@ -144,7 +157,7 @@ export default {
           name: 'conclusion',
           type: 'object',
           fields: [
-            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Conclusion'},
             {name: 'content', type: 'text', title: 'Conclusion Text'},
           ],
         },
