@@ -19,7 +19,7 @@ export default {
       title: 'Category',
     },
     {
-      name: 'id',
+      name: 'projectid',
       type: 'string',
       title: 'Project ID',
     },
@@ -37,7 +37,7 @@ export default {
       name: 'multiImages',
       type: 'array',
       title: 'Gallery Images',
-      of: [{type: 'image'}],
+      of: [{ type: 'image' }],
     },
     {
       name: 'descriptionTitle',
@@ -59,8 +59,8 @@ export default {
       type: 'object',
       title: 'Project Link',
       fields: [
-        {name: 'title', type: 'string', title: 'Link Title'},
-        {name: 'url', type: 'url', title: 'URL'},
+        { name: 'title', type: 'string', title: 'Link Title' },
+        { name: 'url', type: 'url', title: 'URL' },
       ],
     },
     {
@@ -71,9 +71,15 @@ export default {
         {
           name: 'ProjectOverview',
           type: 'object',
+          title: 'Project Overview',
           fields: [
-            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Project Overview'},
-            {name: 'content', type: 'text', title: 'Content'},
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Project Overview',
+            },
+            { name: 'content', type: 'text', title: 'Content' },
           ],
         },
         {
@@ -81,15 +87,26 @@ export default {
           type: 'object',
           title: 'Concept & Objective',
           fields: [
-            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Concept & Objective'},
-            {name: 'content', type: 'text', title: 'Content'},
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Concept & Objective',
+            },
+            { name: 'content', type: 'text', title: 'Content' },
           ],
         },
         {
           name: 'DesignProcess',
           type: 'object',
+          title: 'Design Process',
           fields: [
-            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Design Process'},
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Design Process',
+            },
             {
               name: 'content',
               type: 'array',
@@ -98,8 +115,8 @@ export default {
                 {
                   type: 'object',
                   fields: [
-                    {name: 'title', type: 'string', title: 'Step Title'},
-                    {name: 'content', type: 'text', title: 'Step Detail'},
+                    { name: 'title', type: 'string', title: 'Step Title' },
+                    { name: 'content', type: 'text', title: 'Step Detail' },
                   ],
                 },
               ],
@@ -109,34 +126,42 @@ export default {
         {
           name: 'ResearchInspiration',
           type: 'object',
+          title: 'Research Inspiration',
           fields: [
             {
               name: 'title',
               type: 'string',
               title: 'Title',
-              initialValue: () => 'Research Inspiration'
+              initialValue: () => 'Research Inspiration',
             },
-            {name: 'content', type: 'text', title: 'Content'},
+            { name: 'content', type: 'text', title: 'Content' },
           ],
         },
         {
-          name: 'Impact&Reflection',
+          name: 'impactReflection', // ✅ Fixed from Impact&Reflection
           type: 'object',
+          title: 'Impact & Reflection',
           fields: [
             {
               name: 'title',
               type: 'string',
               title: 'Title',
-              initialValue: () => 'Impact & Reflection'
+              initialValue: () => 'Impact & Reflection',
             },
-            {name: 'content', type: 'text', title: 'Content'},
+            { name: 'content', type: 'text', title: 'Content' },
           ],
         },
         {
           name: 'ProjectHighlights',
           type: 'object',
+          title: 'Project Highlights',
           fields: [
-            {name: 'title', type: 'string', title: 'Title' , initialValue: () => 'Project Highlights'},
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Project Highlights',
+            },
             {
               name: 'content',
               type: 'array',
@@ -145,8 +170,8 @@ export default {
                 {
                   type: 'object',
                   fields: [
-                    {name: 'title', type: 'string', title: 'Highlight Title'},
-                    {name: 'content', type: 'text', title: 'Highlight Detail'},
+                    { name: 'title', type: 'string', title: 'Highlight Title' },
+                    { name: 'content', type: 'text', title: 'Highlight Detail' },
                   ],
                 },
               ],
@@ -156,12 +181,18 @@ export default {
         {
           name: 'conclusion',
           type: 'object',
+          title: 'Conclusion',
           fields: [
-            {name: 'title', type: 'string', title: 'Title', initialValue: () => 'Conclusion'},
-            {name: 'content', type: 'text', title: 'Conclusion Text'},
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Title',
+              initialValue: () => 'Conclusion',
+            },
+            { name: 'content', type: 'text', title: 'Conclusion Text' },
           ],
         },
       ],
     },
   ],
-}
+};
