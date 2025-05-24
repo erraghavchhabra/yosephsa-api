@@ -208,17 +208,6 @@ export default {
               title: 'Iframe Source URL',
             },
           ],
-          preview: {
-            select: {
-              src: 'src',
-            },
-            prepare({src}) {
-              return {
-                title: 'Iframe',
-                subtitle: src,
-              }
-            },
-          },
         },
       ],
     },
