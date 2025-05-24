@@ -37,7 +37,7 @@ export default {
       name: 'multiImages',
       type: 'array',
       title: 'Gallery Images',
-      of: [{ type: 'image' }],
+      of: [{type: 'image'}],
     },
     {
       name: 'descriptionTitle',
@@ -59,8 +59,8 @@ export default {
       type: 'object',
       title: 'Project Link',
       fields: [
-        { name: 'title', type: 'string', title: 'Link Title' },
-        { name: 'url', type: 'url', title: 'URL' },
+        {name: 'title', type: 'string', title: 'Link Title'},
+        {name: 'url', type: 'url', title: 'URL'},
       ],
     },
     {
@@ -79,7 +79,7 @@ export default {
               title: 'Title',
               initialValue: () => 'Project Overview',
             },
-            { name: 'content', type: 'text', title: 'Content' },
+            {name: 'content', type: 'text', title: 'Content'},
           ],
         },
         {
@@ -93,7 +93,7 @@ export default {
               title: 'Title',
               initialValue: () => 'Concept & Objective',
             },
-            { name: 'content', type: 'text', title: 'Content' },
+            {name: 'content', type: 'text', title: 'Content'},
           ],
         },
         {
@@ -115,8 +115,8 @@ export default {
                 {
                   type: 'object',
                   fields: [
-                    { name: 'title', type: 'string', title: 'Step Title' },
-                    { name: 'content', type: 'text', title: 'Step Detail' },
+                    {name: 'title', type: 'string', title: 'Step Title'},
+                    {name: 'content', type: 'text', title: 'Step Detail'},
                   ],
                 },
               ],
@@ -134,7 +134,7 @@ export default {
               title: 'Title',
               initialValue: () => 'Research Inspiration',
             },
-            { name: 'content', type: 'text', title: 'Content' },
+            {name: 'content', type: 'text', title: 'Content'},
           ],
         },
         {
@@ -148,7 +148,7 @@ export default {
               title: 'Title',
               initialValue: () => 'Impact & Reflection',
             },
-            { name: 'content', type: 'text', title: 'Content' },
+            {name: 'content', type: 'text', title: 'Content'},
           ],
         },
         {
@@ -170,8 +170,8 @@ export default {
                 {
                   type: 'object',
                   fields: [
-                    { name: 'title', type: 'string', title: 'Highlight Title' },
-                    { name: 'content', type: 'text', title: 'Highlight Detail' },
+                    {name: 'title', type: 'string', title: 'Highlight Title'},
+                    {name: 'content', type: 'text', title: 'Highlight Detail'},
                   ],
                 },
               ],
@@ -189,10 +189,32 @@ export default {
               title: 'Title',
               initialValue: () => 'Conclusion',
             },
-            { name: 'content', type: 'text', title: 'Conclusion Text' },
+            {name: 'content', type: 'text', title: 'Conclusion Text'},
           ],
         },
       ],
     },
+    {
+      name: 'iframes',
+      type: 'array',
+      title: 'Iframes',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'src',
+              type: 'url',
+              title: 'Iframe Source URL',
+            },
+          ],
+          preview: {
+            select: {
+              title: 'src',
+            },
+          },
+        },
+      ],
+    },
   ],
-};
+}
